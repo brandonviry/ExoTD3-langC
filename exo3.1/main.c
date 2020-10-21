@@ -10,9 +10,9 @@ typedef struct temps Temps;
 Temps saisieTemps(void)
 {
  struct temps t ;
-scanf("%d", t.heures);
-scanf("%d", t.minutes);
-scanf("%d", t.secondes);
+scanf("%d", &t.heures);
+scanf("%d", &t.minutes);
+scanf("%d", &t.secondes);
 
 
  return t;
