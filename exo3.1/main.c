@@ -10,9 +10,12 @@ typedef struct temps Temps;
 Temps saisieTemps(void)
 {
  struct temps t ;
- t.heures=0;
- t.minutes=5;
- t.secondes=4747;
+scanf("%d", t.heures);
+scanf("%d", t.minutes);
+scanf("%d", t.secondes);
+
+
+ return t;
 
 }
 void afficheTemps(struct temps t)
@@ -21,8 +24,8 @@ void afficheTemps(struct temps t)
 }
 int main(void)
 {   Temps t;
-    saisieTemps();
-    afficheTemps( t.heures, t.minutes, t.secondes);
+    t=  saisieTemps();
+    afficheTemps( t);
 
 }
 
