@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
     
     return 0;
 }
-void affiche(id * speudo)
+void affiche(id* speudo)
 {
 (*speudo).nom ="viry";
 (*speudo).prenom ="brandon";
