@@ -9,7 +9,13 @@ struct identification
 };
 typedef struct identification id ;
 
-
+void affiche(id* speudo)
+{
+(*speudo).nom ="viry";
+(*speudo).prenom ="brandon";
+(*speudo).date =3;
+(*speudo).classe ="2aL2Info";
+}
 int main(int argc, char *argv[])
 {
    id hsk;
@@ -17,11 +23,4 @@ int main(int argc, char *argv[])
    printf("%s %s %ld %s ",hsk.nom,hsk.prenom,hsk.date,hsk.classe);
     
     return 0;
-}
-void affiche(id* speudo)
-{
-(*speudo).nom ="viry";
-(*speudo).prenom ="brandon";
-(*speudo).date =3;
-(*speudo).classe ="2aL2Info";
 }
