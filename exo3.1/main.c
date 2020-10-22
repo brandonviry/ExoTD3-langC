@@ -46,18 +46,27 @@ Temps secondes2temps(int sec)
   t.secondes = (sec% 3600) %60;
   return t;
 }
+Temps differenceTemps(Temps t1, Temps t2)
+{
+  Temps t = {t1.heures - t2.heures ,t1.minutes - t2.minutes,t1.secondes- t2.secondes} ;
+  return t;
+}
 int main(void)
-{   Temps t;
-    int a ;
+{   Temps t,b;
+    
     t=  saisieTemps();
     afficheTemps(t);
-
+    
+    int a ;
     a = temps2secondes(t);
     t= secondes2temps(a);
     printf("%d seconde \n",a);
+    
     afficheTemps(t);
-    system("PAUSE");
 
+    b = differenceTemps(t,t);
+    afficheTemps(b);
+    system("PAUSE");
 }
 
 
