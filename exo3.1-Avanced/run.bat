@@ -1,4 +1,4 @@
 @echo off
 color a
-main < int.txt
+main < intput.txt
 pause
